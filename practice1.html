@@ -1,0 +1,155 @@
+<!-- This is the page for problem 1 -->
+<html>
+
+<head>
+  <title> Practice 1</title>
+</head>
+
+<body>
+  <!-- Question -->
+  <p>Match the symbol with its meaning:</p>
+  <!-- Dropdown Menu for OR -->
+  <label for="OR">∨ = </label>
+  <select name="OR" id="OR">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for TRUE -->
+  <label for="True">T = </label>
+  <select name="True" id="True">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for Statements -->
+  <label for="Statements">p,q = </label>
+  <select name="Statements" id="Statements">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for AND -->
+  <label for="AND">∧ = </label>
+  <select name="AND" id="AND">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for Equivalence -->
+  <label for="Equivalence">≡ = </label>
+  <select name="Equivalence" id="Equivalence">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for NOT -->
+  <label for="NOT">¬ = </label>
+  <select name="NOT" id="NOT">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br>
+  <!-- Dropdown Menu for False -->
+  <label for="False">F = </label>
+  <select name="False" id="False">
+    <optgroup>
+      <option value="Statements">Statements</option>
+      <option value="True">True</option>
+      <option value="False">False</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT">NOT</option>
+      <option value="Equivalence">Equivalence</option>
+    </optgroup>
+  </select>
+  </label>
+  <br><br>
+  <!-- Submit button which runs the practice1() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice1()">Submit</button>
+  <br>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result1"></p>
+</body>
+
+</html>
+<style>
+  /* styles the body */
+  body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(120, 120, 120));
+  }
+</style>
+<script type="text/javascript">
+  //function that checks if the input in the dropdowns is correct
+  function practice1() {
+    //gets the user input from the dropdowns
+    var v1 = document.getElementById("Statements").value == "Statements"
+    var v2 = document.getElementById("True").value == "True"
+    var v3 = document.getElementById("False").value == "False"
+    var v4 = document.getElementById("AND").value == "AND"
+    var v5 = document.getElementById("OR").value == "OR"
+    var v6 = document.getElementById("NOT").value == "NOT"
+    var v7 = document.getElementById("Equivalence").value == "Equivalence"
+    //if at least one dropdown answer is wrong, tells the user they got it incorrect
+    if (!v1 || !v2 || !v3 || !v4 || !v5 || !v6 || !v7) {
+      document.getElementById("result1").innerHTML = "Incorrect! Try again";
+    }
+    //if everything is right, tells the user they got it correct
+    else {
+      document.getElementById("result1").innerHTML = "Correct!";
+    }
+  }
+</script>

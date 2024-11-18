@@ -1,0 +1,64 @@
+<!-- This is the page for problem 5 -->
+<html>
+
+<head>
+  <title> Practice 5</title>
+</head>
+
+<body>
+  <!-- Question -->
+  <p>A classmate who is new to logic shows you how they (perhaps inefficiently) tried to simplify an expression. They
+    said
+    they tried to use some of the basic boolean laws you just learned about. Which boolean law was NOT used?</p>
+  <p> (A∨(B∧C))∧T</p>
+  <p> ((A∨B)∧(A∨C))∧T</p>
+  <p> ((A∨B)∧(A∨C))</p>
+  <p> ((A∨C)∧(A∨B))</p>
+  <br>
+  <!-- Multiple choice options -->
+  <input type="radio" name="option" id="question1" />
+  <label for="question1">Identity</label>
+  <br>
+  <input type="radio" name="option" id="question2" />
+  <label for="question2">Associative</label>
+  <br>
+  <input type="radio" name="option" id="question3" />
+  <label for="question3">Commutative </label>
+  <br>
+  <input type="radio" name="option" id="question4" />
+  <label for="question4">Distributive</label>
+  <br>
+  <!-- Submit button which runs the practice5() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice5()">Submit</button>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result5"></p>
+</body>
+
+</html>
+<style>
+  /* styles the body */
+  body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(120, 120, 120));
+  }
+</style>
+<script type="text/javascript">
+  //function that checks if the input in the multiple choice options is correct
+  function practice5() {
+    //gets user input from multiple choice options
+    var choice = document.getElementById("question2");
+    //if the correct answer was chosen output correct
+    if (choice.checked) {
+      document.getElementById("result5").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't chosen output incorrect
+    else {
+      document.getElementById("result5").innerHTML = "Incorrect! Try again";
+    }
+  }
+
+</script>

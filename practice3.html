@@ -1,0 +1,141 @@
+<!-- This is the page for problem 3 -->
+<html>
+
+<head>
+  <title> Practice 3 </title>
+</head>
+
+<body>
+  <!-- partially filled truth table -->
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>(A∨¬B)∧C</th>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>T</td>
+          <td>T</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>T</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>F</td>
+          <td>T</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>F</td>
+          <td>F</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>T</td>
+          <td>T</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>T</td>
+          <td>F</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>T</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>F</td>
+          <td>_</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Question -->
+  <h4>What goes in the blank spaces?</h4>
+  <!-- Multiple choice options (can select one)-->
+  <input type="radio" name="option" id="question1" />
+  <label for="question1">T,F,F,T</label>
+  <br>
+  <input type="radio" name="option" id="question2" />
+  <label for="question2">F,T,T,T</label>
+  <br>
+  <input type="radio" name="option" id="question3" />
+  <label for="question3">T,F,F,T</label>
+  <br>
+  <input type="radio" name="option" id="question4" />
+  <label for="question4">T,F,F,F</label>
+  <br>
+  <!-- Submit button which runs the practice3() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice3()">Submit</button>
+  <br>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result3"></p>
+</body>
+
+</html>
+
+<style>
+  /* styles the body */
+  body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(120, 120, 120));
+  }
+
+  /* styles the table */
+  table {
+    width: 50%;
+    border: 2px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+
+  /* styles the text in the table */
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  /* gives the rows in the tables their alternating color */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+
+<script type="text/javascript">
+  //function that checks if the input in the multiple choice options is correct
+  function practice3() {
+    //gets user input from multiple choice options
+    var choice = document.getElementById("question4");
+    //if the correct answer was chosen output correct
+    if (choice.checked) {
+      document.getElementById("result3").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't chosen output incorrect
+    else {
+      document.getElementById("result3").innerHTML = "Incorrect! Try again";
+    }
+  }
+
+</script>

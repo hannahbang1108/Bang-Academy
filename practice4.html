@@ -1,0 +1,129 @@
+<!-- This is the page for problem 4 -->
+<html>
+
+<head>
+  <title> Practice 4</title>
+</head>
+
+<body>
+  <!-- Question part 1 -->
+  <p>It's the holiday season and you are looking at parties in the area. You are deciding between the 3 closest to you.
+    All the parties seem to have a strict dress code and let people in based on certain criteria. </p>
+  <p>At the first party, you notice that a woman wearing a blue dress and blue socks is let into the party. However, a
+    second
+    woman wearing a blue dress and pink socks is denied entry. A third woman wearing a green dress and blue socks is
+    also denied
+    entry. What is this the best representation of?</p>
+  <br>
+  <!-- Multiple choice options-->
+  <input type="radio" name="option" id="question1_p1" />
+  <label for="question1">AND</label>
+  <br>
+  <input type="radio" name="option" id="question2_p1" />
+  <label for="question2">OR</label>
+  <br>
+  <input type="radio" name="option" id="question3_p1" />
+  <label for="question3">NOT </label>
+  <br><br>
+  <!-- Submit button which runs the practice4_p1() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice4_p1()">Submit</button>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result4_p1"></p>
+  <br>
+  <!-- Question part 2 -->
+  <p>At the second party, you notice that a woman wearing a bow in her hair is denied entry. However, a different woman
+    not wearing a bow
+    is allowed in. What is this the best representation of?</p>
+  <br>
+  <!-- multiple choice options -->
+  <input type="radio" name="option" id="question1_p2" />
+  <label for="question1">AND</label>
+  <br>
+  <input type="radio" name="option" id="question2_p2" />
+  <label for="question2">OR</label>
+  <br>
+  <input type="radio" name="option" id="question3_p2" />
+  <label for="question3">NOT </label>
+  <br><br>
+  <!-- Submit button which runs the practice4_p2() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice4_p2()">Submit</button>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result4_p2"></p>
+  <br>
+  <!-- Question part 3 -->
+  <p>At the third party, you notice that a man and his daughter and his son are allowed into the party. A different man
+    with just his son is
+    also allowed in. A third man with just his daughter is also allowed in. However, when a fourth man came alone, he
+    was denied
+    entry. What is this the best representation of?</p>
+  <br>
+  <!-- Multiple choice options -->
+  <input type="radio" name="option" id="question1_p3" />
+  <label for="question1">AND</label>
+  <br>
+  <input type="radio" name="option" id="question2_p3" />
+  <label for="question2">OR</label>
+  <br>
+  <input type="radio" name="option" id="question3_p3" />
+  <label for="question3">NOT </label>
+  <br><br>
+  <!-- Submit button which runs the practice4_p3() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice4_p3()">Submit</button>
+   <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result4_p3"></p>
+</body>
+
+</html>
+<style>
+  /* style for the body */
+  body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(120, 120, 120));
+  }
+</style>
+<script type="text/javascript">
+  //function that checks if the input in the multiple choice options is correct for p1
+  function practice4_p1() {
+    //gets user input from multiple choice options
+    var choice = document.getElementById("question1_p1");
+    //if the correct answer was chosen output correct
+    if (choice.checked) {
+      document.getElementById("result4_p1").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't chosen output incorrect
+    else {
+      document.getElementById("result4_p1").innerHTML = "Incorrect! Try again";
+    }
+  }
+  //function that checks if the input in the multiple choice options is correct for p2
+  function practice4_p2() {
+    //gets user input from multiple choice options
+    var choice = document.getElementById("question3_p2");
+    //if the correct answer was chosen output correct
+    if (choice.checked) {
+      document.getElementById("result4_p2").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't chosen output incorrect
+    else {
+      document.getElementById("result4_p2").innerHTML = "Incorrect! Try again";
+    }
+  }
+  //function that checks if the input in the multiple choice options is correct for p3
+  function practice4_p3() {
+    //gets user input from multiple choice options
+    var choice = document.getElementById("question2_p3");
+    //if the correct answer was chosen output correct
+    if (choice.checked) {
+      document.getElementById("result4_p3").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't chosen output incorrect
+    else {
+      document.getElementById("result4_p3").innerHTML = "Incorrect! Try again";
+    }
+  }
+
+</script>

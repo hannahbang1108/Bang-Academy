@@ -1,0 +1,49 @@
+<!-- This is the page for problem 6 -->
+<html>
+
+<head>
+  <title> Practice 6</title>
+</head>
+
+<body>
+  <!-- Question -->
+  <p>What does the following logical expression simplify to?</p>
+  <p> (A∧¬B)∨((¬A∨B)∧A)</p>
+  <p> NOTE: use the word AND (in caps) to represent ∧, ∨ OR (in caps) to represent, and ~ to represent NOT</p>
+  <p>ex. A AND B OR ~C</p>
+  <br>
+  <!-- text box where user will put answer -->
+  <input type="text" id="question" />
+  <br><br>
+  <!-- Submit button which runs the practice6() function when someone clicks -->
+  <button type="submit" value="Submit" onclick="practice6()">Submit</button>
+  <!-- Will display whether user got the question correct or incorrect -->
+  <p id="result6"></p>
+</body>
+
+</html>
+<style>
+  /* styles the body */
+  body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(120, 120, 120));
+  }
+</style>
+<script type="text/javascript">
+  //function that checks if the input in the free response is correct
+  function practice6() {
+    var choice = document.getElementById("question");
+    if (choice.value == "A" || choice.value == "a") {
+      document.getElementById("result6").innerHTML = "Correct!";
+    }
+    //if the correct answer wasn't typed output incorrect
+    else {
+      document.getElementById("result6").innerHTML = "Incorrect! Try again";
+    }
+  }
+
+</script>
