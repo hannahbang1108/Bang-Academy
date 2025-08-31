@@ -1,6 +1,6 @@
 # Bang Academy
 
-My AE2 project is an educational website called Bang Academy that covers Boolean Laws.
+This project is an educational website called Bang Academy that covers Boolean Laws.
 
 ## Description
 
@@ -15,11 +15,11 @@ from my Google Drive.
 
 ### Installing
 
-You can download all the necessary files through my GitHub repository: https://github.com/1565545/1565545.github.io
+You can download all the necessary files through my GitHub repository: https://github.com/hannahbang1108/hannahbang1108.github.io
 
 ### Executing program
 
-In order to run the website on your device, use the following link: https://1565545.github.io
+In order to run the website on your device, use the following link: https://hannahbang1108.github.io
 
 ## Authors
 
