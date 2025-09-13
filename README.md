@@ -19,7 +19,7 @@ You can download all the necessary files through my GitHub repository: https://g
 
 ### Executing program
 
-In order to run the website on your device, use the following link: https://hannahbang1108.github.io
+In order to run the website on your device, use the following link: https://hannahbang1108.github.io/Bang-Academy/
 
 ## Authors
 
