@@ -15,7 +15,7 @@ from my Google Drive.
 
 ### Installing
 
-You can download all the necessary files through my GitHub repository: https://github.com/hannahbang1108/hannahbang1108.github.io
+You can download all the necessary files through my GitHub repository: https://github.com/hannahbang1108/Bang-Academy.git
 
 ### Executing program
 
